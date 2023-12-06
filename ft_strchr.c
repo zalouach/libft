@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:57:49 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/07 22:01:12 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:56:38 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strchr(const char *s, int c)
 
 	p = (char *)s;
 	a = (char)c;
-	if (p == NULL)
-		return (NULL);
 	while (*p != '\0')
 	{
 		while (*p == a)
@@ -29,13 +27,7 @@ char	*ft_strchr(const char *s, int c)
 		}
 		p++;
 	}
+	if (*p == a)
+		return (p);
 	return (NULL);
 }
-
-// int main ()
-// {
-// 	 const char *s = NULL ;
-// 	int c = 'h';
-// 	printf("%s",ft_strchr(s,c));
-// 	return (0);
-// }

@@ -6,15 +6,15 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:03:04 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/19 11:44:50 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/02 13:05:38 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>
+# include <limits.h>
 # include <stdlib.h>
-# include <stdio.h>
 
 size_t	ft_strlen(const char *s);
 char	*ft_strrchr(const char *s, int c);
@@ -45,7 +45,11 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
-char    *ft_strjoin(char const *s1, char const *s2);
-char *ft_strtrim(char const *s1, char const *set);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif

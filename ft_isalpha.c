@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:21:48 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/12 17:33:12 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:43:27 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_isalpha(int c )
 	else
 		return (0);
 }
-
-// int	main(void)
-// {
-// 	printf ("%d", ft_isalpha('V'));
-// 	return (0);
-// }

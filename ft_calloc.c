@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 03:52:03 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/19 17:12:27 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/02 13:21:01 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,15 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (count == 0 || size == 0)
-	{
-		count = 1;
-		size = 1;
-	}
 	ptr = malloc(count * size);
-	if (ptr)
-		ft_bzero(ptr, count * size);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, count * size);
 	return (ptr);
 }
+
+// int main()
+// {
+// 	char *str = calloc(4, 5);
+// 	printf("%s\n", str);
+// }

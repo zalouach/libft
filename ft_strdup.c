@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 05:19:56 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/18 05:13:57 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/11/30 23:52:00 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char *s1)
 	int		i;
 
 	i = 0;
-	if (!s1)
-		return (NULL);
 	ptr = ft_calloc(ft_strlen(s1) +1, sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
@@ -31,9 +29,3 @@ char	*ft_strdup(const char *s1)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-/*int main()
-{
-    char *str = ft_strdup("djjddjkjkdjkdkdkkdk");
-    printf("%s\n", str);
-}*/

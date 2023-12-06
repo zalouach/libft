@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 18:40:43 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/15 09:17:14 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:45:50 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-//int main (void)
-//{
-// printf("%c", ft_tolower('A'));
-//}

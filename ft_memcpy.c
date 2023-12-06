@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 03:55:47 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/19 17:35:29 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/11/28 02:25:01 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,4 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		i++;
 	}
 	return (dst);
-}
-int main ()
-{
-    int s[] = {16} ;
-    int d[] = {20004};
-	int *b = ft_memcpy(s,d,2);
-    printf("%d\n",*b);
-	// printf("%s\n",memcpy(d,s,4));
-    return (0);
 }

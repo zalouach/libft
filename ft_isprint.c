@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:08:29 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/12 17:33:54 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:43:46 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-//int	main (vide)
-//{
-//	printf("%d",ft_isprint('a'));
-//	return (0);
-//}

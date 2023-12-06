@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 22:02:36 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/07 22:10:37 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:45:55 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-// int main (void)
-
-// {
-//     printf("%c",ft_toupper('-'));
-// }

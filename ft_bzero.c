@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 02:47:47 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/12 03:51:52 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 20:11:40 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-// int main()
-//  {
-//      int a = 1028;//
-//      ft_bzero(&a, 1);
-//      printf("%d\n", a);
-//  }

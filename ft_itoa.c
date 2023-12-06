@@ -1,42 +1,58 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/11 01:11:37 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/01 20:10:25 by zalouach         ###   ########.fr       */
+/*   Created: 2023/12/01 19:42:27 by zalouach          #+#    #+#             */
+/*   Updated: 2023/12/02 11:12:14 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+static long int	ft_count(int n)
 {
 	int	i;
-	int	s;
-	int	r;
 
 	i = 0;
-	r = 0;
-	s = 1;
-	while (*str == 32 || (*str >= 9 && *str <= 13))
-		str++;
-	if (str[i] == '-' || str[i] == '+')
+	if (n <= 0)
 	{
-		if (str[i] == '-')
-			s *= -1;
 		i++;
+		n *= -1;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (n > 0)
 	{
-		r = r * 10 + (str[i] - '0');
 		i++;
+		n = n / 10;
 	}
-	if ((r * s) > INT_MAX)
-		return (-1);
-	if ((r * s) < INT_MIN)
-		return (0);
-	return (r * s);
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	char		*ptr;
+	long int	i;
+
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	i = ft_count(n);
+	ptr = malloc(sizeof(char) * i +1);
+	if (!ptr)
+		return (ptr);
+	ptr[i] = '\0';
+	if (n == 0)
+		ptr[0] = '0';
+	if (n < 0)
+	{
+		ptr[0] = '-';
+		n *= -1;
+	}
+	while (n > 0 && i--)
+	{
+		ptr[i] = n % 10 + '0';
+		n = n / 10;
+	}
+	return (ptr);
 }

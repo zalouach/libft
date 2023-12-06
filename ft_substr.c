@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 00:39:36 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/19 17:11:06 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/02 13:19:45 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (s == NULL)
 		return (0);
 	j = 0;
-
-	sum_of_size = ft_strlen(s) + start;
+	sum_of_size = ft_strlen(s) - start;
 	if (ft_strlen(s) < start)
 	{
-		p = malloc(1);
-		*p = '\0';
+		p = ft_strdup("");
 		return (p);
 	}
 	if (sum_of_size < len)
@@ -39,8 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	p[j] = '\0';
 	return (p);
 }
-
-// int main()
-// {
-// 	printf("%s\n", ft_substr(ft_strdup("hello"), 2, -4));
-// }

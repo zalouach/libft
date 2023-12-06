@@ -30,27 +30,28 @@ SRCS		= ft_memset.c \
 			    ft_strjoin.c \
 				ft_strlcat.c \
 			   ft_strtrim.c \
-			#    ft_split.c \
-			#   ft_itoa.c \
-			#   ft_strmapi.c \
-			#   ft_striteri.c
-
+			   ft_split.c \
+			  ft_itoa.c \
+			  ft_strmapi.c \
+			  ft_striteri.c
 
 			  
 				
 OBJS		= $(SRCS:%.c=%.o)
 
 
-FLAGS		= -Wall -Werror -Wextra
+FLAGS		= -Wall -Wextra -Werror
 
+	
 all: $(NAME)
 
-%.o : %.c libft.h
-	cc $(FLAGS) -c $<
 
 $(NAME):$(OBJS)
 	ar rc $(NAME) $(OBJS)
 
+%.o : %.c libft.h
+	cc $(FLAGS) -c $<
+	
 clean:
 	rm -f $(OBJS) 
 	
@@ -59,4 +60,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all re clean fclean
+.PHONY: clean fclean all re 

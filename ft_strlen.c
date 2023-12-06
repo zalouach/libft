@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 21:01:54 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/12 17:34:47 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:45:20 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	char	*p;
-
-// 	p = "zouhir";
-// 	printf ("%zu", ft_strlen(p));
-// 	return (0);
-// }

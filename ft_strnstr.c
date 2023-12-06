@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 05:35:59 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/12 05:44:28 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/01 19:45:30 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-// int main()
-// {
-// //    char *s  = ft_strnstr(NULL, "ou", 0);
-//     char *d  = ft_strnstr("oufkfkfk", "ouf", 3);
-//     // printf("%s\n", s);
-//    printf("%s\n", d);
-// }

@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 01:42:12 by zalouach          #+#    #+#             */
-/*   Updated: 2023/11/12 05:27:43 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/06 15:55:54 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,22 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	int		i;
 	size_t	dstlen;
+	size_t	dstlen_temp;
 	size_t	srclen;
 
-	i = 0;
-	dstlen = ft_strlen(dst);
 	srclen = ft_strlen(src);
-	if (dstsize == 0)
-		return (dstlen);
-	while (dstlen < dstsize)
+	i = 0;
+	if (!dst && dstsize == 0)
+		return (srclen);
+	dstlen = ft_strlen(dst);
+	dstlen_temp = dstlen;
+	if (!dstsize || dstsize <= dstlen)
+		return (srclen + dstsize);
+	while (src[i] && dstlen_temp < dstsize -1)
 	{
-		dst[dstlen] = src[i];
-		dstlen++;
-		i++;
+		dst[dstlen_temp] = src[i++];
+		dstlen_temp++;
 	}
-	dst[dstlen] = '\0';
-	return (ft_strlen(dst));
+	dst[dstlen_temp] = '\0';
+	return (dstlen + srclen);
 }
