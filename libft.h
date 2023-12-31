@@ -6,14 +6,13 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:03:04 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/02 13:05:38 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/11 15:40:04 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>
-# include <limits.h>
 # include <stdlib.h>
 
 size_t	ft_strlen(const char *s);

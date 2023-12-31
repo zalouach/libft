@@ -6,13 +6,13 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 02:14:39 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/06 15:59:47 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/13 13:47:36 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_nz(char const *s, char c)
+static int	ft_nz(char const *s, char c)
 {
 	int		i;
 	int		count;
@@ -68,7 +68,6 @@ static char	**ft_fill(char const *s, char c, char **spliter, size_t wc)
 		start = end;
 		i++;
 	}
-	*(spliter + i) = NULL;
 	return (spliter);
 }
 

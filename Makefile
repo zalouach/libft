@@ -50,8 +50,8 @@ $(NAME):$(OBJS)
 	ar rc $(NAME) $(OBJS)
 
 %.o : %.c libft.h
-	cc $(FLAGS) -c $<
-	
+	cc $(FLAGS) -c $< -o $@
+
 clean:
 	rm -f $(OBJS) 
 	

@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 08:22:28 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/01 20:16:54 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/11 16:01:25 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd < 0)
+		return ;
 	write (fd, &c, 1);
 }

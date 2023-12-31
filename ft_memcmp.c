@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 09:40:24 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/01 19:43:57 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/14 10:36:46 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (d1[i] != d2[i])
-			return ((int)d1[i] - d2[i]);
+			return (d1[i] - d2[i]);
 		i++;
 	}
 	if (i == n)
 		i--;
-	return ((int)d1[i] - d2[i]);
+	return (d1[i] - d2[i]);
 }

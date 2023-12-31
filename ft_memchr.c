@@ -6,7 +6,7 @@
 /*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:39:00 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/01 20:14:34 by zalouach         ###   ########.fr       */
+/*   Updated: 2023/12/19 04:47:43 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (d[i] == a)
-			return ((void *) &d[i]);
+			return ((void*) &d[i]);
 		i++;
 	}
 	return (NULL);
